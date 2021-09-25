@@ -5,7 +5,7 @@
 
 	// check the data base
 	if(!$conn){
-		echo 'error: ' . mysqli_connect_error();
+		die('error: ' . mysqli_connect_error());
 	}
 
 
