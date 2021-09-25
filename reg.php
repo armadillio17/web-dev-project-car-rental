@@ -64,12 +64,13 @@ $zip = '';
   <input class="street" type="text" name="street" placeholder="Street" value="<?php echo htmlspecialchars($street)?>">
   <input class="city" type="text" name="city" placeholder="City" value="<?php echo htmlspecialchars($city)?>">
   <input class="country" type="text" name="country" placeholder="Country" value="<?php echo htmlspecialchars($country)?>">
-  <input class="zip" type="text" name="zip" placeholder="Zip Code" value="<?php echo htmlspecialchars($zip)?>">
+  <input class="zip" type="text" name="zip" placeholder="Zip Code" value="<?php echo htmlspecialchars($zip)?>" maxlength="4">
+  <button value="submit" class="btn_2">Register</button>
   </form>
 
   <!--button-->
   <div class="btn">
-  <button value="submit" class="btn_2">Register</button>
+  
   <p class="reg">Already have an account? <a href="login.php">Login</a></p>
   </div>
 
