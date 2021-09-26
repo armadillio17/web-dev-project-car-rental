@@ -1,35 +1,9 @@
 <?php 
 include 'db_conn.php';
-
+include_once 'header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Car Rental</title>
-</head>
-<body>
-  <!-- navbar -->
-  <div class="navbar-container">
-    <div class="logo"><a href="index.php"><img src="images/LOGO.png" alt="Car Rental"></a></div>
-    <div class="nav-menu">
-      <ul>
-        <li><a  class="active" href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="services.php">Services</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <div class="login"><a href="login.php">Membership Login</a></div>
-      </ul>
-    </div>
-  </div>
-
-  <!-- hero -->
-  <div class="hero-container">
     <!-- form -->
   <form class="form_design" method="POST" action="">
     <h1>Log-in</h1>
@@ -44,12 +18,20 @@ include 'db_conn.php';
 
 
     
-  </div>
-  
+ <?php 
 
-  <!-- footer -->
-  <div class="footer-container">
+  if (isset($_GET["error"])) {
+    if($_GET["error"] == "emptylogin"){
+      echo "<p>Email and Password Required!</p>";
+    }
+    else if($_GET["error"] == "wronglogin"){
+      echo "<p>Wrong Email and Password!</p>";
+    }
 
-  </div>
-</body>
-</html>
+    else if($_GET["error"] == "wrongpassword"){
+      echo "<p>Wrong Password!</p>";
+    }
+    
+  }
+include_once 'footer.php';
+?>
