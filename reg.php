@@ -56,7 +56,7 @@ $zip = '';
   <div class="signup-container"></div>
   <h2 class="signup">Sign Up</h2>
 
-  <form class="reg_form" method="POST" action="login.php">
+  <form class="reg_form" method="POST" action="include/inc_reg.php">
   <input class="email" type="text" name="email" placeholder="Email" value="<?php echo htmlspecialchars($email)?>">
   <input class="pass" type="password" name="password" placeholder="Password" value="<?php echo htmlspecialchars($pass)?>">
   <input class="fname" type="text" name="fname" placeholder="First Name" value="<?php echo htmlspecialchars($fname)?>">
