@@ -1,39 +1,8 @@
 <?php 
 include 'db_conn.php';
-
-
+include_once 'header.php';
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Car Rental</title>
-</head>
-<body>
-  <!-- navbar -->
-  <div class="navbar-container">
-    <div class="logo"><a href="index.php"><img src="images/LOGO.png" alt="Car Rental"></a></div>
-    <div class="nav-menu">
-      <ul>
-        <li><a  class="active" href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="services.php">Services</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <div class="login"><a href="login.php">Membership Login</a></div>
-      </ul>
-    </div>
-  </div>
-
-  <!-- hero -->
-  <div class="hero-container">
-    
-    <div >
-      
     <!-- form -->
   <form  class="form_design" method="POST" action="inc_reg.php">
     <h1>Register</h1>
@@ -62,15 +31,48 @@ include 'db_conn.php';
   </div>
   
 </div>
+
+<?php 
+
+  if (isset($_GET["error"])) {
+    if($_GET["error"] == "email"){
+      echo "<p>Email Required!</p>";
+    }
+    else if ($_GET["error"] == "password") {
+     echo "<p>Password Required!</p>";
+    }
+    else if ($_GET["error"] == "firstname") {
+     echo "<p>Firstname Required!</p>";
+    }
+    else if ($_GET["error"] == "lastname") {
+     echo "<p>Lastname Required!</p>";
+    }
+    else if ($_GET["error"] == "street") {
+     echo "<p>Street Required!</p>";
+    }
+    else if ($_GET["error"] == "city") {
+     echo "<p>City Required!</p>";
+    }
+    else if ($_GET["error"] == "country"){
+     echo "<p>Country Required!</p>";
+    }
+     else if ($_GET["error"] == "invalidemail") {
+     echo "<p>Wrong Email!</p>";
+    }
+     else if ($_GET["error"] == "emailtaken") {
+     echo "<p>Email is already taken!</p>";
+    }
+      else if ($_GET["error"] == "stmtfailed2") {
+     echo "<p>Something went wrong!</p>";
+    }
+     else if ($_GET["error"]== "none") {
+     echo "<p>You have sign up!</p>";
+    }
+
+  }
+
+?>
   
-    
-
-
-  
-
-  <!-- footer -->
-  <div class="footer-container">
-
-  </div>
-</body>
-</html>
+<?php
+include_once 'footer.php';
+?>
