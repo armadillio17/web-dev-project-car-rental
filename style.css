@@ -124,6 +124,7 @@ body{
   border-radius: 25px;
 }
 
+/*class specific h1 tag design*/
 .form_design > h1 {
   color: black;
   text-align: center;
@@ -133,7 +134,7 @@ body{
   
   border: none;
 }
-
+/*class specific paragraph tag design*/
 .form_design > p{
   text-align: center;
   width: 100%;
@@ -141,7 +142,7 @@ body{
  
   border: none;
 }
-
+/*class specific label tag design*/
 .form_design label {
   width: 100%;
   margin-bottom: 10px;
@@ -155,7 +156,7 @@ body{
     border: none;
   background: #f1f1f1;
 }
-
+/*class specific input design*/
 .form_design input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   background-color: #ddd;
   outline: none;
@@ -196,7 +197,7 @@ margin-top: 10px;
 width: 100%;
   
 }
-
+/*class specific href design*/
 .signin a{
   color: #FCAF13;
 }
