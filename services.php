@@ -4,16 +4,11 @@ include('include/db_inlcude_connect.php');
 include_once 'header.php';
 
 ?>
-//HTML code here
 
+  <!-- services/products -->
+  <div class="services-container">
 
-
-
-
-
-
-
-//end of html
+  <!-- footer -->
 <?php 
 include_once 'footer.php';
 ?>
