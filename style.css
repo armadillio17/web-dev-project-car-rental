@@ -104,17 +104,92 @@ body{
 }
 
 /*contact us */
-.form-contactus{
-  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero6.jpg) no-repeat;
+.contactus_hero{
+
+  background: url(images/car_rental_hero6.jpg) no-repeat;
+  
   background-position: center;
   background-size: cover;
-  color: #F0F8FF;
+  height: 120vh;
+   
+}
+
+.bg{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 50%);
+  height: 120vh;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.GIT1{
+width: 50%;
+  color: black;
+  align-self: center;
+  justify-content: center;\
+
+  
+}
+
+.color1{
+margin: 40px;
+  padding: 40px;
+text-align: center;
+}
+
+.GIT{
+
+  color: black;
+height: 50%;
+  
+}
+
+.GIT p{
+  margin-right: 20px;
+}
+.bold{font-weight: bold;}
+.color{ 
+margin: 40px;
+  padding: 20px;
+display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.map{
+  background-position: center;
+  text-align: center;}
+
+
+.contact_form{
+
+  color: black;
+  width: 30%;
+  padding: 30px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
-  align-items: center;
+  align-content: center;
+  height: 40vh;
+  margin-bottom: 40px;
+  opacity: 85%;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
 }
+
+.contact_form h2 {margin-bottom: 20px;}
+
+
 
 .form-contactus label{
   width: 100%;
@@ -124,22 +199,6 @@ body{
 
 }
 
-.submit a{
-  font-weight: 700;
-  font-size: 16px;
-  background-color: #FCAF13;
-  color: #1A1A1A;
-  padding: 12px 20px;
-  border-radius: 10px ;
-  transition: .2s ease;
-  margin: 8px 0;
-}
-
-.submit a:hover{
-  background-color: #fff;
-  border: solid .1px #c28408;
-  transition: .2s ease;
-}
 
 
 /* footer */
@@ -163,6 +222,7 @@ body{
   flex-direction: column;
   border-radius: 25px;
   justify-content: center;
+  align-content: center;
 }
 
 .form_design > h1 {
@@ -238,6 +298,21 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   outline: none;
 }
 
+.contact_form input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+    border: none;
+  background: #f1f1f1;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.contact_from input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
 /*horizontal line design */
 .form_design hr {
   text-align: center;
@@ -269,7 +344,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   background-color: #f1f1f1;
   text-align: center;
 padding: 10px;
-margin-top: 10px;
+margin-top: 5px;
 
   
 }
