@@ -5,10 +5,12 @@ include_once 'header.php';
 ?>
 
     <!-- form -->
-  <form class="form_design" method="POST" action="">
+  <form class="form_design_Login" method="POST" action="">
     <h1>Log-in</h1>
     <hr>
+    <label for="email"><b>E-mail</b></label>
     <input type="email" name="email" placeholder="EMAIL...">
+    <label for="pwd"><b>Password</b></label>
     <input type="password" name="pwd" placeholder="Password...">
     <button class="btn" type="submit" name="submit">Login</button>
       <div class="signin">
