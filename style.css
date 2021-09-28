@@ -103,6 +103,45 @@ body{
   height: 100vh;
 }
 
+/*contact us */
+.form-contactus{
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero6.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #F0F8FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
+
+.form-contactus label{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+
+}
+
+.submit a{
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #FCAF13;
+  color: #1A1A1A;
+  padding: 12px 20px;
+  border-radius: 10px ;
+  transition: .2s ease;
+  margin: 8px 0;
+}
+
+.submit a:hover{
+  background-color: #fff;
+  border: solid .1px #c28408;
+  transition: .2s ease;
+}
+
+
 /* footer */
 .footer-container{
   background-color: #1A1A1A;
