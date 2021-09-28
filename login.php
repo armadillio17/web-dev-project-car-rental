@@ -3,7 +3,9 @@ include 'db_conn.php';
 include_once 'header.php';
 
 ?>
-
+<!-- hero -->
+  <div class="hero-container">
+  
     <!-- form -->
   <form class="form_design_Login" method="POST" action="">
     <h1>Log-in</h1>
@@ -17,7 +19,7 @@ include_once 'header.php';
     <p> Don't have an account? <a href="reg.php">Register</a></p>
   </div>
   </form>
-
+</div>
 
     
  <?php 
