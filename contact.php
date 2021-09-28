@@ -49,6 +49,9 @@ include_once 'header.php';
       echo "<p>Details Required!</p>";
     }
    }
+<?php 
+include_once 'footer.php';
+?>
 
 ?>
 
