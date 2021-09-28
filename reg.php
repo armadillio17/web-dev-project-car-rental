@@ -3,6 +3,10 @@ include 'db_conn.php';
 include_once 'header.php';
 
 ?>
+<!-- hero -->
+  <div class="hero-container">
+
+  
     <!-- form -->
   <form  class="form_design" method="POST" action="inc_reg.php">
     <h1>Register</h1>
@@ -30,8 +34,6 @@ include_once 'header.php';
   </form>
   </div>
   
-</div>
-
 <?php 
 
   if (isset($_GET["error"])) {
