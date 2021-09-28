@@ -1,14 +1,12 @@
 <?php 
-include 'db_conn.php';
+include 'include/db_include_connect.php';
 include_once 'header.php';
 
 ?>
 <!-- hero -->
   <div class="hero-container">
-
-  
     <!-- form -->
-  <form  class="form_design" method="POST" action="inc_reg.php">
+  <form  class="form_design" method="POST" action="include/inc_reg.php">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
@@ -34,6 +32,7 @@ include_once 'header.php';
   </form>
   </div>
   
+
 <?php 
 
   if (isset($_GET["error"])) {

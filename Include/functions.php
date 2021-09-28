@@ -86,7 +86,7 @@ function invalidemail($email){
 
 
 function emailMatch($conn, $email){
-	$sql = "SELECT * FROM users WHERE email = ?;";
+	$sql = "SELECT * FROM lynjk WHERE email = ?;";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)){
 	header("location: ../reg.php?error=stmtfailed1");
@@ -111,7 +111,7 @@ function emailMatch($conn, $email){
 
 function createAccount($conn, $email,$pwd,$fname,$lname,$street,$city,$country){
 
-	$sql = "INSERT INTO users (email, pass, fname, lname, street, city, country) VALUES (?,?,?,?,?,?,?);";
+	$sql = "INSERT INTO lynjk (email, pwd, fname, lname, street, city, country) VALUES (?,?,?,?,?,?,?);";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)){
 	header("location: ../reg.php?error=stmtfailed2");
@@ -145,7 +145,7 @@ function loginUser($conn, $email, $pwd){
 		exit();
 	}
 
-	$pwdHashed = $userExist["pass"];
+	$pwdHashed = $userExist["pwd"];
 	$checkPwd = password_verify($pwd, $pwdHashed);
 
 	if ($checkPwd == false) {

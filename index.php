@@ -1,19 +1,14 @@
 <?php 
-	
 
 include_once 'header.php';
-
 ?>
-//HTML code here
+<!-- hero -->
+  <div class="hero-container">
+
+  </div>
 
 
 
-
-
-
-
-
-//end of html
 <?php 
 include_once 'footer.php';
 ?>

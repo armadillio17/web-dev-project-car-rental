@@ -3,9 +3,9 @@
 if(isset($_POST["submit"])){
 
 	$email = $_POST['email'];
-	$pwd = $_POST['password'];
+	$pwd = $_POST['pwd'];
 
-	require_once 'db_inlcude_connect.php';
+	require_once 'db_include_connect.php';
 	require_once 'functions.php';
 
 

@@ -1,6 +1,6 @@
 <?php 
 	
-include('include/db_inlcude_connect.php');
+include('include/db_include_connect.php');
 include_once 'header.php';
 
 ?>

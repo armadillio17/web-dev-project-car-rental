@@ -1,13 +1,13 @@
 <?php 
-include 'db_conn.php';
+include 'include/db_include_connect.php';
 include_once 'header.php';
 
 ?>
 <!-- hero -->
   <div class="hero-container">
-  
+
     <!-- form -->
-  <form class="form_design_Login" method="POST" action="">
+  <form class="form_design_Login" method="POST" action="include/inc_login.php">
     <h1>Log-in</h1>
     <hr>
     <label for="email"><b>E-mail</b></label>
