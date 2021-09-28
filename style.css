@@ -114,50 +114,87 @@ body{
 
 /* Reg & Log-in form design */
 .form_design{
-  padding: 40px;
+  
   background-color: white;
-  box-sizing: border-box;
+  
   width: 100%;
+  padding: 70px;
+  
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   border-radius: 25px;
+  justify-content: center;
 }
 
-/*class specific h1 tag design*/
 .form_design > h1 {
   color: black;
   text-align: center;
 
-  width: 100%;
+  
   margin-bottom: 10px;
   
   border: none;
 }
-/*class specific paragraph tag design*/
+
 .form_design > p{
   text-align: center;
-  width: 100%;
+  
   
  
   border: none;
 }
-/*class specific label tag design*/
+
 .form_design label {
-  width: 100%;
+  
+  margin-bottom: 10px;
+}
+
+.form_design_Login{
+  
+  background-color: white;
+  
+  width: 50%;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+}
+
+.form_design_Login > h1 {
+  color: black;
+  text-align: center;
+
+  
+  margin-bottom: 10px;
+  
+  border: none;
+}
+
+.form_design_Login > p{
+  text-align: center;
+  
+  
+ 
+  border: none;
+}
+
+.form_design_Login label {
+  
   margin-bottom: 10px;
 }
 
 /*input text css like e-mails, passwords bla bla bla For Log-in and Reg form*/
-.form_design input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password], input[type=email] {
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
     border: none;
   background: #f1f1f1;
+  justify-content: center;
 }
-/*class specific input design*/
-.form_design input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -167,7 +204,7 @@ body{
   text-align: center;
   border: 1px solid #f1f1f1;
   margin-bottom: 10px;
-  width: 100%;
+  
 }
 
 /*button css*/
@@ -194,10 +231,10 @@ body{
   text-align: center;
 padding: 10px;
 margin-top: 10px;
-width: 100%;
+
   
 }
-/*class specific href design*/
+
 .signin a{
   color: #FCAF13;
 }
