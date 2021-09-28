@@ -35,7 +35,4 @@
     </div>
   </div>
 
-  <!-- hero -->
-  <div class="hero-container">
-
-  </div>
+  
