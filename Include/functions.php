@@ -105,7 +105,7 @@ function emailMatch($conn, $email){
 		return $result;
 	}
 	mysqli_stmt_close($stmt);
-
+}
 
 //function create account 
 
