@@ -9,352 +9,463 @@ body{
 }
 
 /* navbar */
-.navbar-container{
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 15vh;
-}
-
-.logo a img{
-  margin-left: 100px;
-  width: 100px;
-  height: auto;
-
-}
-
-.nav-menu ul{
+.navbar-container {
+  background: #fff;
+  height: 100px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+}
+
+.checkbtn {
+  font-size: 35px;
+  color: #FCAF13;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+
+.logo a img{
+  width: 300px;
+  height: auto;
+}
+
+.navmenu ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
   font-size: 20px;
   font-weight: bold;
-  margin-right: 50px;
 }
 
-.nav-menu ul li a{
-  margin: 5px;
-  padding: 10px;
-  color: #1A1A1A;
-}
-
-.nav-menu ul li a:hover, a.active{
-  margin: 5px;
-  padding: 10px;
-  text-decoration: underline #FCAF13;
-  color: #FCAF13;
-}
-
-.login a{
-  font-weight: 500;
-  font-size: 18px;
-  background-color: #FCAF13;
-  color: #1A1A1A ;
-  padding: 5px 29px;
-  border-radius: 20px;
-  transition: .2s ease;
-  margin: 5px;
-}
-
-.login a:hover{
-  background-color: #fff;
-  border: 1px solid #FCAF13;
+.navmenu ul li a {
+  margin: 10px 30px;
   color: #000;
-  border-radius: 20px;
+}
+
+.navmenu ul li a:hover {
+  margin: 10px 30px;
+  color: #000;
+}
+
+.navmenu ul li a.active {
+  text-decoration: underline 3px #FCAF13;
+}
+
+.login a {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  background: #FCAF13;
+  border-radius: 3px;
   transition: .2s ease;
-  padding: 7px 31px;
-  border-radius: 20px;
+}
+
+.login a:hover {
+  background: #fff;
+  transition: .2s ease;
 }
 
 /* hero */
 .hero-container{
-  background: url(images/car_rental_hero.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero4.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  background-color: #fff;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.hero-container h1 {
+.text-container {
+  text-align: center;
   color: #fff;
+}
+
+.text-container h1{
+  font-size: 60px;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+/* featured cars */
+.image-container-carousel {
+  align-items: center;
+  display: flex;
+  margin: 2rem auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vh;
+}
+.gallery-carousel{
+  display: flex;
+}
+
+.services-container{
+  background-color: #fff;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-products-container {
+  display: flex;
+  margin: 50px 0;
+}
+
+.product {
+  margin: 20px;
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product img {
+  margin: 30px 20px 10px 20px;
+  border-radius: 10px;
+  border: solid .5px #4949493d;
+}
+
+.reserve-button {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: #FCAF13;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: .2s ease;
+}
+
+.reserve-button:hover {
+  background-color: #c28408;
+  transition: .2s ease;
+}
+
+
+/* about */
+.about-container {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero5.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FCAF13;
+  color: #fff;
+  height: 70vh;
+}
+
+.about-text{
+  width: 70%;
+}
+
+.about-text h2 {
+  margin: 10px 0;
   font-size: 40px;
 }
 
-/* about */
-.about-container{
-  background-color: #bbb;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
-}
-
-/* services/products */
-.services-container{
+.learn-more {
+  margin: 30px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
   background-color: #FCAF13;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  transition: .2s ease;
 }
 
-/*contact us */
-.contactus_hero{
+.learn-more a {
+  color: #000;
+}
 
-  background: url(images/car_rental_hero6.jpg) no-repeat;
-  
+.learn-more:hover{
+  background-color:#fff;
+  transition: .2s ease;
+  transition: .2s ease;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.image {
+  filter: grayscale(100%);
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: .3s ease;
+}
+
+.image:hover{
+  filter: none;
+  transition: .3s ease;
+}
+
+.quote {
+  margin: 20px;
+}
+
+.form-container{
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero6.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 120vh;
-   
-}
-
-.bg{
-  display: flex;
-  flex-direction: column;
-  color: white;
-  align-content: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255, 50%);
-  height: 120vh;
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
-}
-.GIT1{
-width: 50%;
-  color: black;
-  align-self: center;
-  justify-content: center;\
-
-  
-}
-
-.color1{
-margin: 40px;
-  padding: 40px;
-text-align: center;
-}
-
-.GIT{
-
-  color: black;
-height: 50%;
-  
-}
-
-.GIT p{
-  margin-right: 20px;
-}
-.bold{font-weight: bold;}
-.color{ 
-margin: 40px;
-  padding: 20px;
-display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-self: center;
-  justify-content: center;
-}
-
-.map{
-  background-position: center;
-  text-align: center;}
-
-
-.contact_form{
-
-  color: black;
-  width: 30%;
-  padding: 30px;
-  margin-top: 40px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  height: 40vh;
-  margin-bottom: 40px;
-  opacity: 85%;
-  text-align: center;
-  justify-content: center;
-  align-self: center;
-}
-
-.contact_form h2 {margin-bottom: 20px;}
-
-
-
-.form-contactus label{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-
-}
-
-
-
-/* footer */
-.footer-container{
-  background-color: #1A1A1A;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 50vh;
 }
 
-/* Reg & Log-in form design */
-.form_design{
-  
-  background-color: white;
-  
-  width: 30%;
-  padding: 30px;
-  
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-  justify-content: center;
-  align-content: center;
-}
-
-.form_design > h1 {
-  color: black;
+.request-quote {
+  margin: 30px 20px;
+  font-weight: 700;
+  font-size: 16px;
   text-align: center;
-
-  
-  margin-bottom: 10px;
-  
-  border: none;
-}
-
-.form_design > p{
-  text-align: center;
-  
-  
- 
-  border: none;
-}
-
-.form_design label {
-  
-  margin-bottom: 10px;
-}
-
-.form_design_Login{
-  
-  background-color: white;
-  
-  width: 50%;
-  padding: 20px;
-  
-  display: flex;
-  flex-direction: column;
-  border-radius: 25px;
-}
-
-.form_design_Login > h1 {
-  color: black;
-  text-align: center;
-
-  
-  margin-bottom: 10px;
-  
-  border: none;
-}
-
-.form_design_Login > p{
-  text-align: center;
-  
-  
- 
-  border: none;
-}
-
-.form_design_Login label {
-  
-  margin-bottom: 10px;
-}
-
-/*input text css like e-mails, passwords bla bla bla For Log-in and Reg form*/
-input[type=text], input[type=password], input[type=email] {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 10px;
-    border: none;
-  background: #f1f1f1;
-  justify-content: center;
-}
-
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-.contact_form input[type=text], input[type=password], input[type=email] {
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 15px;
-    border: none;
-  background: #f1f1f1;
-  justify-content: center;
-  border-radius: 25px;
-}
-
-.contact_from input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/*horizontal line design */
-.form_design hr {
-  text-align: center;
-  border: 1px solid #f1f1f1;
-  margin-bottom: 10px;
-  
-}
-
-/*button css*/
- .btn{
   background-color: #FCAF13;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-  opacity: 0.9;
-  align-self: center;
-  border-radius: 25px;
-
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  transition: .2s ease;
 }
 
-.btn:hover {
-  opacity: 1;
+.request-quote:hover{
+  background-color:#fff;
+  transition: .2s ease;
+  transition: .2s ease;
 }
 
-/*sign in design*/
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-padding: 10px;
-margin-top: 5px;
+/* footer */
+.footer-container{
+  background-color: #FCAF13;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color: #000;
+  font-weight: bold;
+}
 
+/* services page */
+.services-hero-container {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero5.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.services-products-container {
+  background-color: #fff;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about us page */
+.about-hero-container {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5)), url(images/car_rental_hero.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.about-text-container {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FCAF13;
+  color: #fff;
+  height: 70vh;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .checkbtn {
+    display: block;
+  }
+  .navmenu ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 30px;
+    font-weight: bold;
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    right: -100%;
+    top: 100px;
+    height: 100%;
+    transition: all .5s;
+    z-index: 1;
+  }
   
+  .navmenu ul li {
+    margin: 50px 0;
+    color: #000;
+  }
+
+  .navmenu ul:hover {
+    right: 0;
+  }
+
+  /* image-container-carousel*/
+  .image-container-carousel {
+    width: 100%;
+  }
+
+  /* featured products */
+  .services-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .featured-products-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product {
+    margin: 20px;
+    width: 60%;
+    border-radius: 10px;
+
+  }
+  
+  .product img {
+    margin: 30px 20px 10px 20px;
+    border-radius: 10px;
+    border: solid .5px #4949493d;
+  }
+
+  .learn-more {
+    margin: 30px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    background-color: #FCAF13;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    transition: .2s ease;
+  }
+  
+  /* about section */
+  .about-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image{
+    width: 67%;
+  }
 }
 
-.signin a{
-  color: #FCAF13;
-}
+@media screen and (max-width: 425px) {
+  /* image-container-carousel*/
 
-@media screen and (max-width: 768px){
-  body{
+  .hero-container {
+    height: 60vh;
+  }
+  .image-container-carousel {
+    width: 70%;
+  }
+  .services-container{
+    height: auto;
+  }
+  
+  .login{
     display: none;
   }
+
+  .logo a img{
+    width: 70%;
+  }
+
+  .checkbtn {
+    margin-right: 60px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-container h1 {
+    font-size: 40px;
+  }
+
+  .text-container p {
+    width: 50%;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .orm-container h2 {
+    font-size: 20px;
+  }
+  .request-quote {
+    margin: 30px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+
+  }
+  
 }
